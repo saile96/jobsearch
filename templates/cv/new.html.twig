@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Cv{% endblock %}
+
+{% block body %}
+<div class="card">
+     <div class="card-header bg-info">
+    <h1>Créer un CV</h1>
+</div>
+</div>
+    {{ include('cv/_form.html.twig') }}
+
+    <a href="{{ path('cv_index') }}">Retour à la liste</a>
+{% endblock %}
