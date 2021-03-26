@@ -38,8 +38,8 @@
                 <td>{{ cv.niveauEtude }}</td>
                 <td>{{ cv.experience }}</td>
                 <td>
-                    <a href="{{ path('cv_show', {'id': cv.id}) }}">Voir CV</a>
-                    <a href="{{ path('cv_edit', {'id': cv.id}) }}">Modifier</a>
+                    <a class ="btn btn-sm btn-primary" href="{{ path('cv_show', {'id': cv.id}) }}">Voir CV</a>
+                    <a class ="btn btn-sm btn-primary" href="{{ path('cv_edit', {'id': cv.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -50,5 +50,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('cv_new') }}">Créer un nouveau CV</a>
+    <a class ="btn btn-sm btn-primary" href="{{ path('cv_new') }}">Créer un nouveau CV</a>
 {% endblock %}

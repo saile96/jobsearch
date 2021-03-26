@@ -3,12 +3,22 @@
 {% block title %}New Cv{% endblock %}
 
 {% block body %}
+<div class="container col-md-6">
+     <div class="container mt-5">
+     <div class="row">
+     <div class="col-md-12">
 <div class="card">
      <div class="card-header bg-info">
     <h1>Créer un CV</h1>
 </div>
 </div>
+ </br>
     {{ include('cv/_form.html.twig') }}
-
-    <a href="{{ path('cv_index') }}">Retour à la liste</a>
+ </br>
+    <a class="btn btn-sm btn-info" href="{{ path('cv_index') }}">Retour à la liste</a>
+    <a class="btn btn-sm btn-info" href="{{ path('accueil') }}">Retour</a>
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
